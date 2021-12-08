@@ -1,0 +1,21 @@
+
+-- Different expressions used in the Confusion Matrix is in the image, showing the example of logistic regression. 
+-- Such as False positive, False Negative, True Positive , True Negative 
+
+
+Accuracy Paradox: 
+-- Lets imagine there are two classes a arbitary value can be predicted to . 
+-- Sometimes in certain situations when the one of the prediction doesn't occur. 
+-- The model accuracy shown to increase. Which creates a paradox. 
+-- That's why it is told not to completely rely on the predictions of confusion matrix. 
+
+Another Method Called Cumulative Accuracy Profile:
+ -- You take a curve made from random values, then you compare your result with that random curve. 
+ -- You also take cystral curve, the absolute possibility curve , which gives us 100% accuracy. 
+ -- Then we compare the area under these curves to predict the accuracy. 
+ -- Shown an example in the images. 
+ 
+=
+ 
+
+
