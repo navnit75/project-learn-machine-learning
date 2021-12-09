@@ -4,10 +4,10 @@
 
 # IMAGES
 
-#### Standardization Normalization
+#### Statistical Significance 
 
-![image1](link1)
+![image1](https://raw.githubusercontent.com/navnit75/learn_ml/master/Notes/Regressions/Statistical%20Significance.png)
 
 #### Assumption of linear regression
 
-![image1](link1)
+![image1](https://github.com/navnit75/learn_ml/raw/master/Notes/Regressions/Various%20Regressions.png)
