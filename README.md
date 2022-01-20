@@ -9,4 +9,4 @@
 
 # Certificate of Completion
 
-![certificate](https://udemy-certificate.s3.amazonaws.com/image/UC-a2af47ad-bbdd-4017-a6c8-9befae9e0147.jpg)
+[Find certificate here](https://udemy-certificate.s3.amazonaws.com/image/UC-a2af47ad-bbdd-4017-a6c8-9befae9e0147.jpg)
