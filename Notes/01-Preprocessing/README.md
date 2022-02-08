@@ -126,7 +126,7 @@ print(X)
 ```
 
 - Code:
-  - If data is in binary, use of LabelEncoder is easy. 
+  - If data is binary, use of LabelEncoder is easy. 
 
 ```python
 from sklearn.preprocessing import LabelEncoder
