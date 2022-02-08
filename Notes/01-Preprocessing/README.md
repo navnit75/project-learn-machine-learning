@@ -37,14 +37,14 @@ y = dataset.iloc[:,-1].values
 # TAKING CARE OF MISSING DATA
 
 - Basically replacing the missing values with the mean of the values
-- sklearn library is one of the most famous libraries of all so always remember this
+- Using sklearn 
 
 ```python
 from sklearn.impute import SimpleImputer
 ```
 
 - creation of the SimpleImputer object and intialise the following properties as mentioned
-- Here we are basically replacing the np.nan values as mean of the coloumn
+- Here we are basically replacing the np.nan values as mean of the data in the column.
 
 ```python
   imputer = SimpleImputer(missing_values = np.nan,strategy = 'mean')
