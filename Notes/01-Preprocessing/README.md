@@ -56,7 +56,7 @@ from sklearn.impute import SimpleImputer
 imputer.fit(X[:,1:3])
 ```
 
-- Assigning of the values also required
+- Assigning back the data. 
 
 ```python
 X[:,1:3]=imputer.transform(X[:,1:3])
@@ -66,10 +66,10 @@ X[:,1:3]=imputer.transform(X[:,1:3])
 
 # ENCODING THE CATEGORICAL DATA:
 
-- Its hard for ML models to understand character data
-- Hence the requirement arises to change these data to the numerical data.
+- Its hard for ML models to understand character based categorical data
+- Hence the requirement arises to change these data to the numerical format.
 - The process is called as ENCODING of the data.
-- Changing the categorical data
+- For ex. Below `France` is changes to `(1 0 0)`
 
 ## VARIETY ONE
 
@@ -126,7 +126,7 @@ print(X)
 ```
 
 - Code:
-  - Again using sklearn
+  - If data is in binary, use of LabelEncoder is easy. 
 
 ```python
 from sklearn.preprocessing import LabelEncoder
@@ -156,29 +156,27 @@ X_train,X_test,y_train,y_test = train_test_split(X,y,test_size = 0.2,random_stat
 # FEATURE SCALING
 
 - Basically refers to scaling down the data into a range so that , one attribute doesn't dominate
-  another attribute.
-- Question arises : Feature scaling should be applied before the split or after the split?
-- Ans: After the split
-- Reason: If we apply the feature scaling before the data, the values scaled will be on the basis of
+  other attributes.
+- **Question arises : Feature scaling should be applied before the split or after the split?**
+- **Ans**: After the split
+- **Reason**: If we apply the feature scaling before the data, the values scaled will be on the basis of
   the whole data set. But we should note that the data should be scaled train and test separately, to know
   the independent results accurately.
-- Meanwhile feature scaling after the test and train split also avoids INFORMATION LEAKAGE.
+- Meanwhile feature scaling after the test and train split also avoids `INFORMATION LEAKAGE`.
 
 - Two Varieties:
-
   1.  Standardization : Will put all the values between (-3,+3) --> Works all the times
   2.  Normalization: Will put all the values between (0,1) --> When features have normal distribution
 
 - Method to apply
-
   1.  Apply the standardization in train dataset
   2.  Whatever the mean and deviation obtained from train dataset
   3.  Transform the testing dataset using same deviation and mean
 
-- Feature Scaling shouldn't be applied to the dummy variables (variables introduced due to categorical data)
+- Feature Scaling shouldn't be applied to the `dummy variables` **(variables introduced due to categorical data)**
 - Reason being , they are already between -3 and +3, and if feature scaling changes the values of these data, there identity would be lost.
-- As in there comibination represents some data, which was in string format.
-- if it gets modified. What is their use?
+- As in there combination represents information, which was in string format.
+- Modification of `dummy variables` will lose the representation of `INFORMATION` they wish to convey . What is their use?
 
 ```python
 from sklearn.preprocessing import StandardScaler
