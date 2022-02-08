@@ -94,7 +94,7 @@ y_pred = regressor.predict(X_test)
 
 #### VISUALIZING THE RESULT
 
-#### Scatter is used for the Points
+#### Scatter is used for plotting the Points
 
 ```python
 plt.scatter(X_train,y_train,color='red')
