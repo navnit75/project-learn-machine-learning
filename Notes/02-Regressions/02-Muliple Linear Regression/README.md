@@ -1,12 +1,10 @@
 # INTRODUCTION
-
 - Started with introduction to the dataset in which there are 50 companies and their profit
 - R&D spend, administration, statics, profits are given
 - Ur job is to create a model to find the most suitable company for investment , their main criteria being profit
 - Our model should tell us profit based on their R&D spend, administration, statics, marketing spend
 
 ## ASSUMPTIONS
-
 - linearity
 - homoscedasticity
 - multivariate normality
@@ -16,7 +14,7 @@
 ## DUMMY VARIABLE
 
 - Usually when we have categorical data , then the coloumn needs to be encoded
-- When its encoded its divided into separate coloumn according to the values
+- When its encoded its divided various coloumn according to the values
 - Ex:
 
   | City       | Var1 | Var2 |
