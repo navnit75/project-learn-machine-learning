@@ -67,12 +67,12 @@ h1 --> Coin is not fair
 
 - BACKWARD ELIMINATION:
 
-  - Select a significance level to stay in the model (e.g. SL = 0.05)
-  - Fit the full model with all possible predictors
-  - Consider the predictor with highest P - value. If P>SL go to step4 , otherwise go to fin <------------+
-  - Remove the predictor |
-  - Fit the model without predictor variable--------------------------------------------------------------+
-  - MODEL IS READY
+  1. Select a significance level to stay in the model (e.g. SL = 0.05)
+  2. Fit the full model with all possible predictors
+  3. Consider the predictor with highest P - value. If P>SL go to step4 , otherwise go to fin
+  4. Remove the predictor 
+  5. Fit the model without predictor variable , and again to step 3 
+  6. Fin: MODEL IS READY
 
 - FORWARD SELECTION:
 
